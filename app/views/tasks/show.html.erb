@@ -1,0 +1,14 @@
+
+<p><strong> task details </strong></p>
+<ul>
+
+    <li> <%= @task.title  %></li>
+    <h1><%= @task.details %></h1>
+
+  <%= link_to "Delete", task_path(@task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+    <%= link_to 'return to list' , tasks_path %>
+       <a href="tasks/index"></a>
+
+</ul>
